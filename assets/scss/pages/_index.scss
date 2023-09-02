@@ -1,0 +1,37 @@
+.navbav {
+  /* 用 position: fixed; 可以固定住側欄 */
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+  .logo {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/week5/logo-ANSWER.svg);
+    background-repeat: no-repeat;
+    width: 151px;
+    height: 40px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid #198754;
+  }
+  .user {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    .user-email {
+      font-size: 14px;
+    }
+  }
+}
+
+main {
+  margin-left: 296px;
+}
